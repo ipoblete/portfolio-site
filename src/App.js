@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from './components/Home';
+import Home from './home/Home';
+import Projects from './projects/Projects';
+import About from './about/About';
 import './App.css';
 
 export default function App() {
@@ -9,8 +11,10 @@ export default function App() {
     <Router>
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/projects" component={Projects} />
+        <Route exact path="/about" component={About} />
       </Switch>
     </Router>
    </>
-  );
+  )
 }

@@ -7,6 +7,7 @@ export default function Home() {
           Ivan Poblete
         </h1>
         <p>full stack developer</p>
+        <a href="/projects">click to enter</a>
       </div>
   )
 }
